@@ -1,7 +1,7 @@
 import cv2
 import os
 
-cap = cv2.VideoCapture("wyh.mp4")
+cap = cv2.VideoCapture("phw.mp4")
 index = 1
 
 while(cap.isOpened()):

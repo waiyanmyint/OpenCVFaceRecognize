@@ -3,7 +3,7 @@ import os
 import numpy as np
 from matplotlib import pyplot as plt
 
-subjects = ["", "Bill Gates", "Steve Jobs", "Wai Yan Hein"]
+subjects = ["", "WYM", "WYH", "PHW"]
 
 # function to detect face using OpenCV
 def detect_face(img):
@@ -38,10 +38,10 @@ def prepare_training_data(data_folder_path):
 
         # our subject directories start with letter 's' so
         # ignore any non-relevant directories if any
-        if not dir_name.startswith("a"):
+        if not dir_name.startswith("p"):
             continue;
 
-        label = int(dir_name.replace("a", ""))
+        label = int(dir_name.replace("p", ""))
 
         subject_dir_path = data_folder_path + "/" + dir_name
 
